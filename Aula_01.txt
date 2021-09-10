@@ -1,0 +1,31 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <%
+            String nome = "Carlos";
+            int idade = 30;
+            float nota_av1 = 7.5f;
+            
+            out.print("Nome = " + nome);
+            out.print("<br>");
+            out.println("Idade = " + idade);
+            out.print("<br>");
+            out.print("Nota AV1= " + nota_av1);
+            out.print("<br>");
+            
+            out.print("contexto = " + request.getContextPath());
+            out.print("<br>");
+
+            out.print("Exemplo = " + request.getServerName());
+            out.print("<br>");
+            
+            
+         %>   
+    </body>
+</html>
